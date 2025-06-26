@@ -9,7 +9,7 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-name = "amaranth-stuff-by-sporniket"
+name = "stuff-for-amaranth-by-sporniket"
 version = "0.0.6"
 description = "A curated collection of code written using the amaranth hdl"
 readme = "README.md"
@@ -34,10 +34,10 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/sporniket/amaranth-stuff"
+homepage = "https://github.com/sporniket/stuff-for-amaranth"
 #TODO documentation = "https://readthedocs.org"
-repository = "https://github.com/sporniket/amaranth-stuff"
-bug-tracker = "https://github.com/sporniket/amaranth-stuff/issues"
+repository = "https://github.com/sporniket/stuff-for-amaranth"
+bug-tracker = "https://github.com/sporniket/stuff-for-amaranth/issues"
 
 [tool.pdm.scripts]
 _.env_file = ".env.toolchain"
