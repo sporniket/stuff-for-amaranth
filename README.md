@@ -35,6 +35,15 @@ Content
  You should have received a copy of the GNU Lesser General Public License along with **Stuff for Amaranth by Sporniket**.
  If not, see http://www.gnu.org/licenses/ .
 
+### What's new
+
+#### Version 0.1.0
+
+Initial publishing on PyPi. The code is organized between 3 modules : 
+
+* `general_locic_for_amaranth` : counters, decoders, shift registers, pulses, delays, ...
+* `encoding_for_amaranth` : implementation of specific encoders, for now there is the implementation of DVI TMDS.
+* `testing_for_amaranth` : a test runner and a test suite runner generating RTLIL bench and SymbiYosys script, to use Yices 2 to perform formal validation on logic implemented using amaranth.
 
 ## 2. What should you know before using **Stuff for Amaranth by Sporniket** ?
 
