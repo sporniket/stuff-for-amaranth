@@ -10,7 +10,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "stuff-for-amaranth-by-sporniket"
-version = "0.0.6"
+version = "0.1.1"
 description = "A curated collection of code written using the amaranth hdl"
 readme = "README.md"
 requires-python = ">=3.10"
