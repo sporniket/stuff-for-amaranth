@@ -37,7 +37,7 @@ Content
 
 ### What's new
 
-#### Version 0.1.0
+#### Version 0.1.1
 
 Initial publishing on PyPi. The code is organized between 3 modules : 
 
