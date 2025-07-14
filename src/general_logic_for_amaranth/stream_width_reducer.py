@@ -19,24 +19,37 @@ If not, see <https://www.gnu.org/licenses/>.
 ---
 """
 
-from .counter import RippleCounter
-from .decoder import Decoder
-from .delay import Delay
-from .mono_impulse import MonoImpulse
-from .pulsar import Pulsar
-from .sequencer import Sequencer
-from .shiftreg import ShiftRegisterSendLsbFirst
-from .slowbeat import SlowBeat
-from .stream_width_reducer import StreamWidthReducerMsbFirst
+### amaranth -- main deps
+from amaranth.hdl import Elaboratable, Module, Signal
+from amaranth.build import Platform
 
-__all__ = [
-    "Decoder",
-    "Delay",
-    "MonoImpulse",
-    "Pulsar",
-    "RippleCounter",
-    "Sequencer",
-    "ShiftRegisterSendLsbFirst",
-    "SlowBeat",
-    "StreamWidthReducerMsbFirst",
-]
+
+class StreamWidthReducerMsbFirst(Elaboratable):
+    def __init__(self, widthIn: int, widthOut: int):
+        """Instanciate a stream width reducer with given widthes.
+        ---
+        @param widthIn Input width, at least 2
+        @param widthOut Output width, at least 1 and less or equal to `widthIn`
+        """
+        pass
+
+    @property
+    def dataIn(self) -> Signal:
+        pass
+
+    @property
+    def dataOut(self) -> Signal:
+        pass
+
+    @property
+    def dataInRead(self) -> Signal:
+        pass
+
+    @property
+    def dataOutValid(self) -> Signal:
+        pass
+
+    def elaborate(platform: Platform) -> Module:
+        m = Module()
+
+        return m
