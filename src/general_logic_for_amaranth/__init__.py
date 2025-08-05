@@ -23,6 +23,7 @@ from .counter import RippleCounter
 from .decoder import Decoder
 from .delay import Delay
 from .mono_impulse import MonoImpulse
+from .multiplexer import Multiplexer
 from .pulsar import Pulsar
 from .sequencer import Sequencer
 from .shiftreg import ShiftRegisterSendLsbFirst
@@ -32,6 +33,7 @@ __all__ = [
     "Decoder",
     "Delay",
     "MonoImpulse",
+    "Multiplexer",
     "Pulsar",
     "RippleCounter",
     "Sequencer",
