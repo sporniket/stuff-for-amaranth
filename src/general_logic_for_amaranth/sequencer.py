@@ -25,6 +25,8 @@ from amaranth.build import Platform
 
 
 class Sequencer(Elaboratable):
+    """Follow a simple sequence of steps of varying durations."""
+
     def __init__(self, program: list[int]):
         for step in program:
             if step == 0:

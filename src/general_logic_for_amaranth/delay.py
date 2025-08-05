@@ -25,7 +25,7 @@ from amaranth.build import Platform
 
 
 class Delay(Elaboratable):
-    """Generate logic that wait the specified amount of clock cycles before asserting its output."""
+    """Waits the specified amount of clock cycles before asserting its output."""
 
     def __init__(self, delay: int = 0):
         self.delay = Signal(range(delay + 1), init=delay)

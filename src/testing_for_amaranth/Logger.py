@@ -25,6 +25,8 @@ from amaranth.build import Platform
 
 
 class Logger(Elaboratable):
+    """Exposes a given number of past values of the input signal."""
+
     def __init__(self, source, size):
         self.source = source
         self.logs = [

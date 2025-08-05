@@ -25,6 +25,8 @@ from amaranth.build import Platform
 
 
 class ShiftRegisterSendLsbFirst(Elaboratable):
+    """Shift register sending the **Least Significant Bit** first."""
+
     def __init__(self, dataIn: Signal, delay=0):
         self.dataIn = dataIn
         self.load = Signal()

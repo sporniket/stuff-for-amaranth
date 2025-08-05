@@ -25,7 +25,7 @@ from amaranth.build import Platform
 
 
 class Decoder(Elaboratable):
-    """Generate a decoder that supports an input in range [0..span[."""
+    """Decode a n-bits value into a bitset of 2**n bits with a single bit selected."""
 
     def __init__(self, span: int):
         if span < 2:

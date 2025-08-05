@@ -23,6 +23,8 @@ import os
 
 
 class SymbiYosysHelper:
+    """Utility functions to work with **SymbiYosys**."""
+
     def __init__(self, baseName: str, *, workingDir: str = "", depth: int = 20):
         if baseName == None or len(baseName) == 0:
             raise ValueError("must.be.non.empty:baseName")

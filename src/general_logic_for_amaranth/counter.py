@@ -25,7 +25,7 @@ from amaranth.build import Platform
 
 
 class RippleCounter(Elaboratable):
-    """Counter that is incremented at each clock ; the value has the specified width."""
+    """A n-bits Counter that is incremented at each clock."""
 
     def __init__(self, width: int):
         self.width = width

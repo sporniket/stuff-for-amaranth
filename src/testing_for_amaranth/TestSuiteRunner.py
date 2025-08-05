@@ -27,9 +27,9 @@ from .TestRunner import TestRunner
 
 
 class TestSuiteRunner:
-    __test__ = False  # so that pytest does NOT try to collect it
-
     """A system to generate a suite of test benches to be formally verified by SymbiYosis (sby)"""
+
+    __test__ = False  # so that pytest does NOT try to collect it
 
     def __init__(
         self, deviceFactory, castingFactory, stories, *, platform: Platform = None

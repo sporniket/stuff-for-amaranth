@@ -26,7 +26,7 @@ from amaranth.build import Platform
 
 class DviTmdsEncoder(Elaboratable):
     """An implementation of the TMDS encoding for DVI.
-    ```
+
     See https://www.fpga4fun.com/HDMI.html and https://mjseemjdo.com/2021/04/02/tutorial-6-hdmi-display-output/
 
     ## Typical application
@@ -62,7 +62,6 @@ class DviTmdsEncoder(Elaboratable):
 
     Thus one can compute the half balance counter, by computing (N1 - 4), looking at the sign bit as well as the sign bit of
     the counter when it is not 0 to decide the case.
-    ```
     """
 
     def __init__(self, dataIn: Signal, vde: Signal, ctl0: Signal, ctl1: Signal):

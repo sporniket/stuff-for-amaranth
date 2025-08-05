@@ -45,9 +45,9 @@ IGNORED_FRAME_NAMES = ["run", "_runBehaviourTest", "_runReachabilityTest"]
 
 
 class TestRunner:
-    __test__ = False  # so that pytest does NOT try to collect it
-
     """A system to generate test benches to be formally verified by SymbiYosis (sby)"""
+
+    __test__ = False  # so that pytest does NOT try to collect it
 
     def __init__(
         self, deviceFactory, castingFactory, story, *, platform: Platform = None

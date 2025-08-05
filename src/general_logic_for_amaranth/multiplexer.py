@@ -25,6 +25,10 @@ from amaranth.build import Platform
 
 
 class Multiplexer(Elaboratable):
+    """Selects an input signal among a given set.
+
+    All the source signal **MUST** have the same shape."""
+
     def __init__(self, *, inputs: list[Signal]):
         self._selector = Signal(range(len(inputs)))
         self._inputs = [i for i in inputs]

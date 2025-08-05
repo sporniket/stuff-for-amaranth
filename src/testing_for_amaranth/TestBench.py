@@ -32,6 +32,8 @@ from .Story import Story
 
 
 class TestBench(Elaboratable):
+    """Embeds the module under test and helps to write assertions."""
+
     __test__ = False  # so that pytest does NOT try to collect it
 
     def __init__(self):

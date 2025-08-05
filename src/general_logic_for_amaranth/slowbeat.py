@@ -25,7 +25,7 @@ from amaranth.build import Platform
 
 
 class SlowBeat(Elaboratable):
-    """A clock signal that have a frequency of up to platform.default_clk_frequency/2 with 50% duty cycle"""
+    """An alternating signal that have a frequency of up to `platform.default_clk_frequency/2` with 50% duty cycle"""
 
     def __init__(self, frequency: int):
         """Set up the target frequency.

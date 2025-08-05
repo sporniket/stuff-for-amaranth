@@ -25,6 +25,8 @@ from amaranth.build import Platform
 
 
 class MonoImpulse(Elaboratable):
+    """Emits a 1-clock pulse when going out of reset."""
+
     def __init__(self):
         self.dataOut = Signal()
         self.dataOutInverted = Signal(init=1)

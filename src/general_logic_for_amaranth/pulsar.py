@@ -25,6 +25,8 @@ from amaranth.build import Platform
 
 
 class Pulsar(Elaboratable):
+    """Emits a 1-clock pulse at regular intervals."""
+
     def __init__(self, period: int = 1):
         self.dataOut = Signal()
         self.dataOutInverted = Signal(init=1)
