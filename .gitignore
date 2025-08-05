@@ -2,6 +2,7 @@
 tmp
 tmp.*
 build-tests/
+apidocs
 
 # pdm stuff
 .pdm-python
